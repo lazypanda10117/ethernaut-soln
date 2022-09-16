@@ -1,4 +1,6 @@
 ```javascript
+pragma solidity ^0.6.0;
+
 contract GatekeeperOneAttack {
     function attack(address addr) public {
         bytes8 gate_key = bytes8(uint64(uint160(tx.origin))) & 0xFFFFFFFF0000FFFF;

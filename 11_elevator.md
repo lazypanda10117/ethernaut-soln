@@ -1,4 +1,6 @@
 ```javascript
+pragma solidity ^0.6.0;
+
 contract Building {
     bool public first_call = true;
  

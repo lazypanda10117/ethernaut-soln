@@ -1,4 +1,6 @@
 ```javascript
+pragma solidity ^0.6.0;
+
 contract GatekeeperTwoAttack {
     constructor (address addr) public {
         bytes8 gate_key = bytes8(uint64(bytes8(keccak256(abi.encodePacked(address(this))))) ^ (uint64(0) - 1));
