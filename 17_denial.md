@@ -10,4 +10,4 @@ contract DenialAttack {
 }
 ```
 
-Just have a function to consume all gas, so the transaction always fail. There is caveat, something about 1/64 gas is reserved to running the code in the storage (cannot be used for call).
+Just have a function to consume all gas, so the transaction always fail. There is a caveat, something about 1/64 gas is reserved and cannot be used for calls.

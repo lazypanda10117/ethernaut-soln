@@ -1,2 +1,1 @@
-# ethernaut-soln
-Solutions for ethernaut.
+# Repository for my solutions to Ethernaut

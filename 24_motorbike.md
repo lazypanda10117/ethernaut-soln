@@ -18,7 +18,7 @@ engine_address = engine_addresss_with_padding.slice(26, 66); // The last 20 byte
 
 let self_destruct_contract_address = destroy_address
 
-sendTransaction({
+await sendTransaction({
 	from: player, 
 	to: engine_address, 
 	data: web3.eth.abi.encodeFunctionCall({
@@ -28,7 +28,7 @@ sendTransaction({
 	}, [])
 });
 
-sendTransaction({
+await sendTransaction({
 	from: player, 
 	to: engine_address, 
 	data: web3.eth.abi.encodeFunctionCall({

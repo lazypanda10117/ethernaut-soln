@@ -21,7 +21,7 @@ Converting the above EVM opcodes into bytecode using [Ethereum Virtual Machine O
 
 Finally, we can create a new contract by 
 ```javascript
-sendTransaction({from: player, data:"600a600c600039600a6000f3604260805260206080f3"})
+await sendTransaction({from: player, data:"600a600c600039600a6000f3604260805260206080f3"})
 ```
 
 Reference:
